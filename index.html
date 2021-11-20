@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<title>Procedure text -Aflah 9B</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+<body>
+
+<!-- Links (sit on top) -->
+
+
+<!-- Header with image -->
+
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">HOW TO MAKE DARMIE</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Ingridients</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Step</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>A bowl</h5>
+      <p class="w3-text-grey"></p><br>
+    
+      <h5>A plate</h5>
+      <p class="w3-text-grey"></p><br>
+    
+      <h5>Water</h5>
+      <p class="w3-text-grey"></p><br>
+    
+      <h5>A spoon</h5>
+      <p class="w3-text-grey"></p><br>
+    
+      <h5>Oil</h5>
+      <p class="w3-text-grey"></p><br>
+      
+      <h5>An egg</h5>
+      <p class="w3-text-grey"></p><br>
+      
+      <h5>Noodles</h5>
+      <p class="w3-text-grey"></p><br>
+      
+      <h5>A pan</h5>
+      <p class="w3-text-grey"></p><br>
+      
+      <h5>A frying pan</h5>
+      <p class="w3-text-grey"></p><br>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>First</h5>
+      <p class="w3-text-grey">Pour the water into the pan and then heat it until it boils</p><br>
+    
+      <h5>Second</h5>
+      <p class="w3-text-grey">Put the noodles into the pan and wait until it's cooked. While waiting for the noodles to cook, we can break the egg into the bowl</p><br>
+    
+      <h5>Third</h5>
+      <p class="w3-text-grey">If the noodles are already cooked, we can turn of the stove and throw away the water</p><br>
+    
+      <h5>Fourth</h5>
+      <p class="w3-text-grey">After that put the noodles into the bowl that already contains egg. Don't forget to put the seasoning</p><br>
+    
+      <h5>Fifth</h5>
+      <p class="w3-text-grey">After that mix until evenly distributed</p>
+      
+      <h5>Sixth</h5>
+      <p class="w3-text-grey">Heat the frying pan and then if it's already hot you can add the oil</p>
+      
+      <h5>Seventh</h5>
+      <p class="w3-text-grey">Add the noodles that we mixed earlier and cook the darmie until it's cooked</p>
+      
+      <h5>Eighth</h5>
+      <p class="w3-text-grey">Move the darmie into the plate and tadaa your darmie is done</p>
+      
+      <h5>Ninth</h5>
+      <p class="w3-text-grey">You can the darmie right away or eat it with sambal</p>
+    </div>  
+    
+  </div>
+</div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Link Video: https://drive.google.com/file/d/104Kutcjo1uKOWWXwb9jghdF7V9m9ab2X/view?usp=sharing</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
